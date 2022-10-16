@@ -5,6 +5,11 @@
     if (arg3 > result) result = arg3;
     return result;
 }
-int[] array = {11, 21, 31, 41, 15, 61, 17, 18, 19};
-array[0] = 12;
-Console.WriteLine(array[4]);
+int[] array = {11, 215, 31, 41, 1566, 615, 17, 18, 19};
+
+int result = Max(
+    Max(array[0], array[2], array[2]),
+    Max(array[3], array[4], array[5]),
+    Max(array[6], array[7], array[8])
+);
+Console.WriteLine(result);
